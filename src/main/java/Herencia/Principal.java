@@ -10,11 +10,21 @@ package Herencia;
  * @author DELL
  */
 public class Principal {
-
     public static void main(String[] args) {
-        Jugadores jugadores = new Jugadores("C. Bryan", "L. Messi", " Copas ganadas", " 5 Balones de oro", " Profesional");
-
-        jugadores.mostrarInf();
+        Jugador jugador = new Jugador("1 Hora", "1000 estrellas", "Tercer lugar", "Daby", "12 vestimentas", "Principiante","12");
+        
+        jugador.mostrarInf();
+        
+        Juegos tiposdevideojuegos1 = new Juegos("Minecraftl", "Sonic", "MarioBross");
+        System.out.println("VideojuegodeSupervivencia :"+ tiposdevideojuegos1.getMinecraft()+
+                "\nVideojuegodeAventura: "+tiposdevideojuegos1.getSegasonic()+
+                "\nVideojuegodeAventura: "+tiposdevideojuegos1.getMariobros());
+        
+        
+        LocalesVideojuegos localesvideojuegos1 = new LocalesVideojuegos("LatacungaPLAYZONE", "CCIPlayZone");
+        System.out.println("Local 1 :"+localesvideojuegos1.getPlayzoneLatacunga()+
+                "\nLocal 2 :"+localesvideojuegos1.getPlayzoneCCI());
+        
     }
 
 }
